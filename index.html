@@ -5,8 +5,46 @@
        <meta http-equiv="X-UA-Compatible" content="IE=edge">
        <meta name="viewport" content="width=device-width, initial-scale=1.0">
        <title>html</title>
+       <style>
+              * {
+                     box-sizing: border-box;
+              }
+              body{
+                     font-family: Arial, Helvetica, sans-serif;
+              }
+              .flex-container{
+                     display: flex;
+                     /*flex-d*irection: column-row;
+                     flex-wrap:wrap;
+                     */
+                     
+              }
+              .item {
+                      background: #f4f4f4f4;
+                      border: #ccc solid 2px;
+                      margin: 10px;
+                      padding: 10px;
+                      text-align: center;
+                      border-radius: 10px;
+                      width: 200px;
+              }
+       </style>
 </head>
 <body>
        <h1>html, css and js</h1>
+       <div class="flex-container">
+              <div class="item item-1">
+                     <h3>Item 1</h3>
+              </div>
+              <div class="flex-container">
+                     <div class="item item-2">
+                            <h3>Item 2</h3>
+                     </div>
+                     <div class="flex-container">
+                            <div class="item item-3">
+                                   <h3>Item 3</h3>
+                            </div>
+       </div>
+
 </body>
 </html>
